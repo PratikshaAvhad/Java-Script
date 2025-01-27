@@ -1,0 +1,25 @@
+<html>
+ <body>
+  <form>
+   Enter email:
+   <input type='text' id='t1'><br>
+    <input type='button' value='check' onclick='validation()'>
+  </form>
+ </body>
+</html>
+
+<script>
+ function validation()
+{
+  var e=document.getElementById('t1').value;
+  var pattern=/^[a-zA-z0-9.]+\@[a-zA-Z]+\.[a-zA-Z]{2,3}$/;
+  if(e.match(pattern))
+  {
+    alert("valid email");
+  }
+  else
+  {
+   alert("invalid email");
+  }
+}
+</script>
