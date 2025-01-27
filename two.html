@@ -1,0 +1,32 @@
+<html>
+ <body>
+   <form name='f1'>
+    Enter username
+     <input type='text' id='t1'><br>
+    Enter password
+      <input type='password' id='t2'><br>
+      <input type='button' value='login' onclick='validate()'>
+     <input type='reset' value='clear'>
+</form>
+</body>
+</html>
+
+<script language='javascript'>
+function validate()
+{
+ var u=documentElementById('t1').value;
+ var p=documentElementById('t2').value;
+{
+  if(u!='rbnb' && p=='123')
+    alert('login success..');
+  else
+    alert('invalid username or password');
+}else
+{
+  alert('dont empty fields');
+}
+}
+</script> 
+
+
+
